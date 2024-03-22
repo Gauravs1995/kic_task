@@ -81,6 +81,7 @@ const SearchList = ({searchData}: SearchListPropType) => {
         <Text style={styles.clearButtonText}>Clear</Text>
       </TouchableOpacity>
       <FlatList
+        ListEmptyComponent={EmptyListMessage}
         testID="search-list-test-id"
         showsVerticalScrollIndicator={false}
         style={styles.listContainer}
@@ -96,6 +97,8 @@ const SearchList = ({searchData}: SearchListPropType) => {
     </View>
   );
 };
+
+const EmptyListMessage = () => <Text>No items found</Text>;
 
 const styles = StyleSheet.create({
   searchField: {
