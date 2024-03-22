@@ -111,6 +111,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   wrapper: {
+    height: '100%',
     gap: 10,
   },
   itemWrapper: {
@@ -128,6 +129,7 @@ const styles = StyleSheet.create({
     flexShrink: 1,
   },
   listContainer: {
+    flex: 1,
     marginHorizontal: 10,
   },
   clearButton: {
